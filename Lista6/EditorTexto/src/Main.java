@@ -14,5 +14,9 @@ public class Main {
         a1.renomear("Lista");
         a1.limpar();
         a1.abrir();
+        System.out.println();
+
+        // to String
+        System.out.println(a1);
     }
 }
