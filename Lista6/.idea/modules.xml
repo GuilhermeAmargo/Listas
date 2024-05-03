@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ContaBancaria/ContaBancaria.iml" filepath="$PROJECT_DIR$/ContaBancaria/ContaBancaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EditorTexto/EditorTexto.iml" filepath="$PROJECT_DIR$/EditorTexto/EditorTexto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JogoLuta/JogoLuta.iml" filepath="$PROJECT_DIR$/JogoLuta/JogoLuta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lista6.iml" filepath="$PROJECT_DIR$/.idea/Lista6.iml" />
+    </modules>
+  </component>
+</project>

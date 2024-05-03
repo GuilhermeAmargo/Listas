@@ -1,10 +1,7 @@
 public class Arquivo {
-    //Atributos
     private String nome;
     private int tamanho;
     private String conteudo;
-
-    //Construtor
 
     public Arquivo(String nome) {
         this.nome = nome;
@@ -12,45 +9,42 @@ public class Arquivo {
         this.conteudo = "";
     }
 
-
-    //Metodos
-    public boolean abrir (){
-        if(nome.isEmpty()){
+    public boolean abrir() {
+        if (nome.isEmpty()) {
             return false;
         }
-        System.out.println("Nome: "+getNome()+"\n"+
-                "Conteúdo: "+getConteudo()+"\n"+
-                "Tamanho: "+getTamanho());
-            return true;
-    }
-
-    public boolean editar (String editarCont){
-        if(nome.isEmpty()){
-            return false;
-        }
-        conteudo = editarCont;
-        tamanho = conteudo.length()*8;
+        System.out.println("Nome: " + getNome() + "\n" +
+                "Conteúdo: " + getConteudo() + "\n" +
+                "Tamanho: " + getTamanho());
+        System.out.println();
         return true;
     }
 
+    public boolean editar(String novoConteudo) {
+        if (nome.isEmpty()) {
+            return false;
+        }
+        conteudo += novoConteudo;
+        tamanho = conteudo.length() * 8;
+        return true;
+    }
 
-    public boolean renomear (String novoNome){
-        if(nome.isEmpty()){
+    public boolean renomear(String novoNome) {
+        if (nome.isEmpty()) {
             return false;
         }
         nome = novoNome;
         return true;
     }
 
-    public boolean limpar (){
-        if(nome.isEmpty()){
+    public boolean limpar() {
+        if (nome.isEmpty()) {
             return false;
         }
         conteudo = "";
-        tamanho = conteudo.length()*8;
+        tamanho = conteudo.length() * 8;
         return true;
     }
-    //Getter Setter
 
     public String getNome() {
         return nome;
@@ -75,8 +69,6 @@ public class Arquivo {
     public void setConteudo(String conteudo) {
         this.conteudo = conteudo;
     }
-
-    //to String()
 
     @Override
     public String toString() {
